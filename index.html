@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>sale-public</title>
+    <link rel="stylesheet" href="//cnstatic01.e.vhall.com/3rdlibs/element-ui/2.0.10/index.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <% if(process.env.BUILD_ENV!='prod') { %>
+       <script src="//cnstatic01.e.vhall.com/3rdlibs/vue/2.5.13/vue.js"></script>
+    <% } else { %>
+       <script src="//cnstatic01.e.vhall.com/3rdlibs/vue/2.5.13/vue.min.js"></script>
+    <% } %>
+    <script src="//cnstatic01.e.vhall.com/3rdlibs/element-ui/2.0.10/index.js"></script>
+    <script src="//cnstatic01.e.vhall.com/3rdlibs/echarts/3.8.5/echarts.min.js"></script>
+    <script src="//cnstatic01.e.vhall.com/3rdlibs/swfobject/2.2.0/swfobject.js"></script>
+    <% if(process.env.BUILD_ENV!='prod') { %>
+       <script src="//t-vrt.e.vhall.com/vhallILSSDK.js"></script>
+    <% } else { %>
+       <script src="//vrtc01.e.vhall.com/vhallILSSDK.js"></script>
+    <% } %>
+  </body>
+</html>
